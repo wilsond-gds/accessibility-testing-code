@@ -15,6 +15,7 @@ For a report to the command line, run pa11y with the URI you want to test:
 `pa11y https://www.gov.uk`
 
 ### Testing local files
+
 If you’re working locally, you can either run pa11y with an absolute path to a html file (pa11y will show what path it’s using to reach the file) or use a localhost address if there is server side processing involved in serving the html
 
 ```
@@ -33,6 +34,17 @@ To save pa11y output, run pa11y with the report option and save the output to a 
 Pa11y doesn’t run axe by default but you can ask it to use both axe-core and HTML Code Sniffer for a full check. If you do this you are likely to get duplicates of errors in your code, as the output from the runners is in different formats.
 
 `pa11y --runner axe --runner htmlcs https://www.gov.uk`
+          
+### Integrating pa11y into other tests
+
+Pa11y can be included into other tests through node.js – see `pally-node.js` for a very simple example script. Run the script with `node pally-node.js`.
+
+See also `page.test.js` where pa11y is integrated into the jest testing environment. To run the jest tests, use these commands in separate terminal windows:
+
+```
+npm run pa11y
+npm test
+```
 
 ## Axe-core
 

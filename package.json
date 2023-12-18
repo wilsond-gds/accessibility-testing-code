@@ -6,7 +6,7 @@
   "scripts": {
     "start-server": "npx http-server",
     "test": "jest",
-    "pa11y": "npx http-server && pa11y --runner axe --runner htmlcs http://localhost:8081"
+    "pa11y": "npx http-server test-page && pa11y --runner axe --runner htmlcs http://localhost:8081"
   },
   "keywords": [],
   "author": "",
