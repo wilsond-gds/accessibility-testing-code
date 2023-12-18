@@ -39,7 +39,7 @@ Pa11y doesn’t run axe by default but you can ask it to use both axe-core and H
 
 Pa11y can be included into other tests through node.js – see `pally-node.js` for a very simple example script. Run the script with `node pally-node.js`.
 
-See also `page.test.js` where pa11y is integrated into the jest testing environment. To run the jest tests, use these commands in separate terminal windows:
+See also `page.test.js` where pa11y is integrated into the [jest testing environment](https://jestjs.io/). To run the jest tests, use these commands in separate terminal windows:
 
 ```
 npm run pa11y
