@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- maximum scale is an accessibility issue -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- missing title is bad -->
+    <title></title>
+    <link rel="stylesheet" href="page.css"/>
+</head>
+<body>
+<header id="test" id="testing">
+    <nav>
+        <ul>
+            <li><a href="#">A link</a></li>
+            <li><a href="#">A link</a></li>
+            <li><a href="#">A link</a></li>
+            <li><a href="#">A link</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- main should contain the content: this might not be picked up by automated testing -->
+<main></main>
+<h1>This is a heading on my badly written web page</h1>
+<p>Page content. Many accessibility issues on this page are created by the page styling.</p>
+<ul>
+    <li>Page content</li>
+    <li>Page content</li>
+    <li>Page content</li>
+    <li>Page content</li>
+</ul>
+<!-- there is no alt text for this image -->
+<img src="test.jpg"/>
+<!-- the empty link should be reported? -->
+<p>More content. <a href="#">There is something wrong with this link</a>.</p>
+<footer>
+    &copy; 2023 People who make websites
+</footer>
+</body>
+</html>

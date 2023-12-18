@@ -1,0 +1,11 @@
+body {background-color: #333; color: #666; font-family:sans-serif; max-width: 75ch; margin: 2rem auto;}
+nav ul {list-style-type: none; display:flex;
+    margin: 0;
+    padding: 0;}
+nav ul li {flex:1;}
+nav ul li a {color: #eee;
+    text-decoration: none;}
+nav {border-bottom: 1px solid #666; padding: 0.5rem 0;}
+img {border:1px solid #666;}
+h1 {color: #777;}
+footer {border-top:1px solid #666; margin-top: 5rem; padding: 0.5rem 0;}
